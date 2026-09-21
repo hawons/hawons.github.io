@@ -83,12 +83,16 @@ p { margin: 0 0 .9em; }
   margin-bottom: 30px;
 }
 
+/* The photo is a 3:4 ID shot on a white ground, so it needs a visible edge —
+   without the border it bleeds into the page and reads as a floating cut-out. */
 .avatar {
   flex: 0 0 auto;
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
+  width: 112px;
+  height: 132px;
   object-fit: cover;
+  object-position: 50% 15%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
   display: block;
 }
 
@@ -295,8 +299,8 @@ p { margin: 0 0 .9em; }
   }
 
   .avatar {
-    width: 92px;
-    height: 92px;
+    width: 88px;
+    height: 104px;
   }
 
   .name { font-size: 28px; }
